@@ -25,6 +25,7 @@ if (isset($_SESSION['user']['id'])) {
         }else{
             $_SESSION['user']['id'] = $user[0]['id'];
             $_SESSION['user']['username'] = $user[0]['username'];
+            $_SESSION['user']['admin'] = $user[0]['admin'];
             header('Location: ../index.php');
             exit;
         }

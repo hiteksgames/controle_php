@@ -2,10 +2,10 @@
 function connectToDB(): PDO
 {
     try {
-        $host = 'phpdemo.braquemard.fr';
+        $host = '127.0.0.1';
         $db = 'phpdemo';
         $username = 'root';
-        $password = 'AdminAbcd123.';
+        $password = '';
 
         $pdo = new PDO('mysql:host=' . $host . ';dbname=' . $db, $username, $password);
 
